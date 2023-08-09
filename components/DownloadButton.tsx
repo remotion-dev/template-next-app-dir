@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { State } from "../helpers/use-rendering";
 import { Button } from "./Button/Button";
@@ -47,13 +46,13 @@ export const DownloadButton: React.FC<{
         <UndoIcon></UndoIcon>
       </Button>
       <Spacing></Spacing>
-      <Link style={link} href={state.url}>
+      <a style={link} href={state.url}>
         <Button>
           Download video
           <Spacing></Spacing>
           <Megabytes sizeInBytes={state.size}></Megabytes>
         </Button>
-      </Link>
+      </a>
     </div>
   );
 };
