@@ -1,6 +1,7 @@
+"use client";
+
 import { Player } from "@remotion/player";
 import type { NextPage } from "next";
-import Head from "next/head";
 import React, { useMemo, useState } from "react";
 import { Main } from "../remotion/MyComp/Main";
 import {
@@ -45,15 +46,6 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <Head>
-        <title>Remotion and Next.js</title>
-        <meta name="description" content="Remotion and Next.js" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div style={container}>
         <div className="cinematics" style={outer}>
           <Player
