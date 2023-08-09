@@ -3,11 +3,11 @@ import {
   renderMediaOnLambda,
   speculateFunctionName,
 } from "@remotion/lambda/client";
-import { DISK, RAM, REGION, SITE_NAME, TIMEOUT } from "../../../config.mjs";
-import { executeApi } from "../../../helpers/api-response";
-import { RenderRequest } from "../../../types/schema";
+import { DISK, RAM, REGION, SITE_NAME, TIMEOUT } from "../../../../config.mjs";
+import { executeApi } from "../../../../helpers/api-response";
+import { RenderRequest } from "../../../../types/schema";
 
-const render = executeApi<RenderMediaOnLambdaOutput, typeof RenderRequest>(
+export const POST = executeApi<RenderMediaOnLambdaOutput, typeof RenderRequest>(
   RenderRequest,
   async (req, body) => {
     if (req.method !== "POST") {
@@ -52,5 +52,3 @@ const render = executeApi<RenderMediaOnLambdaOutput, typeof RenderRequest>(
     return result;
   }
 );
-
-export default render;
