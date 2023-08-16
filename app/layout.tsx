@@ -1,5 +1,4 @@
 import "../styles/global.css";
-import Head from "next/head";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,14 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="description" content="Remotion and Next.js" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </head>
 
       <body>{children}</body>
     </html>
