@@ -10,27 +10,28 @@ import { RAM, REGION, SITE_NAME, TIMEOUT } from "./config.mjs";
 console.log("Selected region:", REGION);
 dotenv.config();
 
-// TODO: Make Next.JS specific setup
 if (!process.env.AWS_ACCESS_KEY_ID && !process.env.REMOTION_AWS_ACCESS_KEY_ID) {
   console.log(
-    'The environment variable "REMOTION_AWS_ACCESS_KEY_ID" is not yet.'
+    'The environment variable "REMOTION_AWS_ACCESS_KEY_ID" is not set.'
   );
+  console.log("Lambda renders were not set up.");
   console.log(
     "Complete the Lambda setup: at https://www.remotion.dev/docs/lambda/setup"
   );
-  process.exit(1);
+  process.exit(0);
 }
 if (
   !process.env.AWS_SECRET_ACCESS_KEY &&
   !process.env.REMOTION_AWS_SECRET_ACCESS_KEY
 ) {
   console.log(
-    'The environment variable "REMOTION_REMOTION_AWS_SECRET_ACCESS_KEY" is not yet.'
+    'The environment variable "REMOTION_REMOTION_AWS_SECRET_ACCESS_KEY" is not set.'
   );
+  console.log("Lambda renders were not set up.");
   console.log(
     "Complete the Lambda setup: at https://www.remotion.dev/docs/lambda/setup"
   );
-  process.exit(1);
+  process.exit(0);
 }
 
 process.stdout.write("Deploying Lambda function... ");
