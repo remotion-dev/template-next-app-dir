@@ -33,6 +33,7 @@ const outer: React.CSSProperties = {
 
 const player: React.CSSProperties = {
   width: "100%",
+  maxWidth: "400px",
 };
 
 const Home: NextPage = () => {
@@ -57,20 +58,8 @@ const Home: NextPage = () => {
             compositionWidth={VIDEO_WIDTH}
             style={player}
             controls
-            autoPlay
-            loop
           />
         </div>
-        <RenderControls
-          text={text}
-          setText={setText}
-          inputProps={inputProps}
-        ></RenderControls>
-        <Spacing></Spacing>
-        <Spacing></Spacing>
-        <Spacing></Spacing>
-        <Spacing></Spacing>
-        <Tips></Tips>
       </div>
     </div>
   );
