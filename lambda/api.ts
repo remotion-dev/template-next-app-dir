@@ -54,5 +54,5 @@ export const getProgress = async ({
     bucketName,
   };
 
-  return makeRequest<ProgressResponse>("api/lambda/progress", body);
+  return makeRequest<ProgressResponse>("/api/lambda/progress", body);
 };
