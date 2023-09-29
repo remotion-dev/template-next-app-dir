@@ -10,10 +10,6 @@ import { ProgressRequest, ProgressResponse } from "../../../../types/schema";
 export const POST = executeApi<ProgressResponse, typeof ProgressRequest>(
   ProgressRequest,
   async (req, body) => {
-    if (req.method !== "POST") {
-      throw new Error("Only POST requests are allowed");
-    }
-
     const renderProgress = await getRenderProgress({
       bucketName: body.bucketName,
       functionName: speculateFunctionName({
