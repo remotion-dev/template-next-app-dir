@@ -42,7 +42,6 @@ const { functionName, alreadyExisted: functionAlreadyExisted } =
     memorySizeInMb: RAM,
     region: REGION,
     timeoutInSeconds: TIMEOUT,
-    architecture: "arm64",
   });
 console.log(
   functionName,
