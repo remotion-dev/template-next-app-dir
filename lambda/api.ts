@@ -10,7 +10,7 @@ import { ApiResponse } from "../helpers/api-response";
 
 const makeRequest = async <Res>(
   endpoint: string,
-  body: unknown
+  body: unknown,
 ): Promise<Res> => {
   const result = await fetch(endpoint, {
     method: "post",

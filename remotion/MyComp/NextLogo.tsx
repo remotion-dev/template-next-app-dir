@@ -55,7 +55,7 @@ export const NextLogo: React.FC<{
   const evolution2 = evolvePath(evolve2, secondPath);
   const evolution3 = evolvePath(
     interpolate(evolve3, [0, 1], [0, 0.7]),
-    thirdPath
+    thirdPath,
   );
 
   return (

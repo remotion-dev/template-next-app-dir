@@ -14,7 +14,7 @@ export type ApiResponse<Res> =
 export const executeApi =
   <Res, Req extends ZodType>(
     schema: Req,
-    handler: (req: Request, body: z.infer<Req>) => Promise<Res>
+    handler: (req: Request, body: z.infer<Req>) => Promise<Res>,
   ) =>
   async (req: Request) => {
     try {
@@ -30,7 +30,7 @@ export const executeApi =
         { type: "error", message: (err as Error).message },
         {
           status: 500,
-        }
+        },
       );
     }
   };
