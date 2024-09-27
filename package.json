@@ -1,5 +1,5 @@
 {
-  "name": "remotion-next-example",
+  "name": "template-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,29 +12,29 @@
     "deploy": "node deploy.mjs"
   },
   "dependencies": {
-    "@remotion/bundler": "^4.0.77",
-    "@remotion/cli": "^4.0.77",
-    "@remotion/google-fonts": "^4.0.77",
-    "@remotion/lambda": "^4.0.77",
-    "@remotion/paths": "^4.0.77",
-    "@remotion/player": "^4.0.77",
-    "@remotion/shapes": "^4.0.77",
-    "next": "^14.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remotion": "^4.0.77",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0",
+    "@remotion/lambda": "^4.0.0",
+    "@remotion/paths": "^4.0.0",
+    "@remotion/player": "^4.0.0",
+    "@remotion/shapes": "^4.0.0",
+    "next": "14.2.13",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "^4.0.0",
     "zod": "3.22.3"
   },
   "devDependencies": {
-    "@remotion/eslint-config": "^4.0.77",
-    "@types/node": "18.7.23",
+    "@remotion/eslint-config": "^4.0.0",
+    "@types/node": "20.14.11",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.3.0",
-    "@types/web": "0.0.143",
-    "dotenv": "^16.0.3",
-    "eslint": "^8.43.0",
-    "eslint-config-next": "^13.4.13",
-    "prettier": "^3.2.5",
-    "typescript": "5.4.5"
+    "@types/web": "0.0.78",
+    "dotenv": "16.0.3",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.2.13",
+    "typescript": "5.3.3",
+    "prettier": "3.2.5"
   }
 }
