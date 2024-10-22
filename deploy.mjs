@@ -5,7 +5,7 @@ import {
 } from "@remotion/lambda";
 import dotenv from "dotenv";
 import path from "path";
-import { RAM, REGION, SITE_NAME, TIMEOUT } from "./config.mjs";
+import { RAM, REGION, SITE_NAME, DISK, TIMEOUT } from "./config.mjs";
 
 console.log("Selected region:", REGION);
 dotenv.config();
@@ -41,6 +41,7 @@ const { functionName, alreadyExisted: functionAlreadyExisted } =
     createCloudWatchLogGroup: true,
     memorySizeInMb: RAM,
     region: REGION,
+    diskSizeInMb: DISK,
     timeoutInSeconds: TIMEOUT,
   });
 console.log(
