@@ -19,7 +19,7 @@
     "@remotion/paths": "^4.0.0",
     "@remotion/player": "^4.0.0",
     "@remotion/shapes": "^4.0.0",
-    "next": "15.2.3",
+    "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "remotion": "^4.0.0",
@@ -36,7 +36,7 @@
     "eslint": "9.19.0",
     "@next/eslint-plugin-next": "15.1.6",
     "eslint-config-next": "15.1.6",
-    "typescript": "5.5.4",
+    "typescript": "5.8.2",
     "prettier": "3.3.3",
     "@eslint/eslintrc": "3.1.0"
   }
