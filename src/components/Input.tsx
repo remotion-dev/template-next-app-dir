@@ -26,6 +26,8 @@ export const Input: React.FC<{
 
   return (
     <input
+      type="search"
+      autoComplete="off"
       disabled={disabled}
       name="title"
       style={textarea}
